@@ -500,11 +500,11 @@ static SSL* TLSConnect(SOCKET hSocket, const CAddress &addrConnect)
 
     if (bConnectedTLS)
     {
-        # string s = addr.ToString();
-        # LogPrintf("KIMI, s: %s\n", s);
-        # if(s.find("7e01") != string::npos){
-        #    LogPrintf("KIMI");
-        # }
+        // string s = addr.ToString();
+        // LogPrintf("KIMI, s: %s\n", s);
+        // if(s.find("7e01") != string::npos){
+        //    LogPrintf("KIMI");
+        // }
         LogPrintf ("TLS: connection to %s has been established. Using cipher: %s\n", addrConnect.ToString(), SSL_get_cipher(ssl));
     }
     else
